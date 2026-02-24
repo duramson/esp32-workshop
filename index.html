@@ -4,8 +4,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
-  <!-- Theme: Simple Dark -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+  <title>ESP32 Workshop</title>
+  <link rel="stylesheet" href="https://docsify.catppuccin.com/mocha/lavender.css">
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css" id="reveal-theme">
 </head>
 <body>
   <div id="app">Laden...</div>
@@ -17,6 +20,12 @@
       subMaxLevel: 2,
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      // REVEAL.JS KONFIGURATION
+      revealjs: {
+        theme: 'dracula',       // Passend zu deinem Dark-Theme
+        transition: 'slide',   // 'none', 'fade', 'slide', 'convex', 'concave', 'zoom'
+        center: true          // Slides vertikal zentrieren
       }
     }
   </script>
@@ -30,6 +39,9 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  
+  <script src="//cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-revealjs/dist/index.js"></script>
   
 </body>
 </html>
