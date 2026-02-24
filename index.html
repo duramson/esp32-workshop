@@ -9,13 +9,15 @@
 <body>
   <div id="app">Laden...</div>
   <script>
-    window.$docsify = {
-      name: 'ESP32 Workshop',
-      repo: '', // Link zu deinem Repo (optional)
-      loadSidebar: true, // Wir wollen ein Menü links
-      subMaxLevel: 2
-      basePath: '/esp32-workshop/'
-    }
+window.$docsify = {
+  name: 'ESP32 Workshop',
+  repo: '', 
+  loadSidebar: true,
+  subMaxLevel: 2,
+  alias: {
+    '/.*/_sidebar.md': '/_sidebar.md'
+  }
+}
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
